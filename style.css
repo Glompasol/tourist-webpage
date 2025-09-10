@@ -3,6 +3,10 @@ body {
   background-color: #f0f9f0;
   margin: 0;
   padding: 0;
+  background-image: url(images/homepage_landscape.png);
+  background-position: 0px 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
