@@ -72,3 +72,27 @@ main {
   margin-top: 0;
   color: #006400
 }
+
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.food-item {
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 9px 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 350px;
+  min-width: 250px;
+}
+
+.food-item img {
+  border-radius: 8px;
+}
