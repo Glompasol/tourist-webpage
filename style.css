@@ -16,6 +16,13 @@ header {
   text-align: center;
 }
 
+footer {
+  background: #00005C;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
 nav a {
   margin: 0 10px;
   color: white;
