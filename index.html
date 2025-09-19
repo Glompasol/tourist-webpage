@@ -1,105 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Header, Main, Sidebar Layout</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f4f6f8; /* cool light gray */
-      font-family: Arial, sans-serif;
-      color: #222831;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        "header header"
-        "main sidebar"
-        "footer footer";
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 80px 1fr 60px;
-      height: 100vh;
-      gap: 0;
-    }
-    .header {
-      grid-area: header;
-      background: #223a5e; /* deep blue */
-      color: #f7fafc;      /* off-white */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      box-shadow: 0 2px 8px rgba(34, 58, 94, 0.06);
-    }
-    .main {
-      grid-area: main;
-      background: #ffffff; /* white for clarity */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 2rem;
-      font-size: 1.1rem;
-      color: #222831;
-      border-right: 1px solid #e0e0e0;
-      box-shadow: 2px 0 8px rgba(34, 58, 94, 0.02);
-      overflow-y: auto;
-    }
-    .main h2 {
-      margin-top: 0;
-      color: #223a5e;
-    }
-    .sidebar {
-      grid-area: sidebar;
-      background: #4ecca3; /* muted teal */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 2rem 1rem;
-      font-size: 1rem;
-      color: #223a5e;
-      box-shadow: -2px 0 8px rgba(78, 204, 163, 0.04);
-      overflow-y: auto;
-    }
-    .sidebar h3 {
-      margin-top: 0;
-      color: #223a5e;
-    }
-    .footer {
-      grid-area: footer;
-      background: #223a5e; /* deep blue */
-      color: #f7fafc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      box-shadow: 0 -2px 8px rgba(34, 58, 94, 0.06);
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    @media (max-width: 800px) {
-      .grid-container {
-        grid-template-areas:
-          "header"
-          "main"
-          "sidebar"
-          "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px 1fr auto 50px;
-      }
-      .main, .sidebar {
-        border-right: none;
-        box-shadow: none;
-      }
-    }
-  </style>
 </head>
 <body>
   <div class="grid-container">
@@ -123,6 +28,50 @@
       <p>
         Ireland is home to more than 30,000 castles and ruins, each with its own unique story!
       </p>
+  <hr style="width:100%;border:none;border-top:1px solid #e0e4ea;margin:2rem 0 1.5rem 0;">
+  <h3>Irish Food Menu</h3>
+  <div class="food-menu" id="food">
+    <div class="food-item">
+    <img src="images/stew_irish.png" alt="Irish Stew" height="200">
+    <h4>Irish Stew</h4>
+    <p>A hearty stew made with lamb, potatoes, carrots, and onions. A true Irish classic!</p>
+  </div>
+  <div class="food-item">
+    <img src="images/irish-brown-soda-bread-image.png" alt="Soda Bread" height="200">
+    <h4>Soda Bread</h4>
+    <p>Traditional Irish bread made with baking soda instead of yeast. Perfect with butter!</p>
+  </div>
+  <div class="food-item">
+    <img src="images/boxty.png" alt="Boxty" height="200">
+    <h4>Boxty</h4>
+    <p>Potato pancake, crispy on the outside and soft inside. A delicious Irish treat!</p>
+  </div>
+  <div class="food-item">
+    <img src="images/seafood-chowder-bread-crackers.png" alt="Seafood Chowder" height="200">
+    <h4>Seafood Chowder</h4>
+    <p>Creamy soup filled with fresh seafood and vegetables, served with brown bread.</p>
+  </div>
+  <div class="food-item">
+    <img src="images/cuddle_irish.png" alt="Cuddle" height="200">
+    <h4>Cuddle</h4>
+    <p>Description</p>
+  </div>
+  <div class="food-item">
+    <img src="images/basically_british_breakfast.png" alt="Full Irish Breakfast" height="200">
+    <h4>Full Irish Breakfast</h4>
+    <p>Description</p>
+  </div>
+  <div class="food-item">
+    <img src="images/whiskey.png" alt="Jameson" height="200">
+    <h4>Jameson Whiskey</h4>
+    <p>Description</p>
+  </div>
+    <div class="food-item">
+    <img src="images/beer.png" alt="Guiness Beer" height="200">
+    <h4>Guiness Beer</h4>
+    <p>Description</p>
+  </div>
+  </div>
     </div>
     <div class="sidebar">
       <img src="images/Coat_of_arms_of_Ireland.png" alt="Irish Harp" style="width:60px;display:block;margin:0 auto 1rem auto;">
@@ -130,7 +79,7 @@
       <ul>
         <li><a href="#">History</a></li>
         <li><a href="#">Culture</a></li>
-        <li><a href="#">Food</a></li>
+        <li><a href="#food">Food</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <h3>Weather</h3>
