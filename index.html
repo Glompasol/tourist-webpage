@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header, Main, Sidebar Layout</title>
+  <title>Travel Ireland</title>
 </head>
 <body>
   <div class="grid-container">
@@ -15,61 +15,65 @@
       <h2>Welcome to Ireland!</h2>
       <img src="images/homepage_landscape.png" alt="Beautiful landscape of Ireland" style="width:100%;max-width:400px;border-radius:12px;margin-bottom:1rem;">
       <p>
-        Discover the beauty, history, and culture of the Emerald Isle. From the rolling green hills to the vibrant cities, Ireland offers something for every traveler.
+          Visit Ireland now and discover all the beauty it has to offer! From stunning landscapes like the Emerald Isle to a rich history and culture deeply rooted in the middle ages. 
       </p>
       <h3>Top Attractions</h3>
       <ul>
-        <li>Cliffs of Moher</li>
-        <li>Giant's Causeway</li>
         <li>Dublin Castle</li>
-        <li>Ring of Kerry</li>
+        <li>Cliffs of Moher</li>
+        <li>Guiness Storehouse</li>
+        <li>Blarney Castle</li>
       </ul>
       <h3>Did You Know?</h3>
-      <p>
-        Ireland is home to more than 30,000 castles and ruins, each with its own unique story!
-      </p>
+      <ul>
+        <li><b>No Snakes</b> - The legend says St. Patrick drove all the snakes out of Ireland, in reality snakes never lived there and it was actually symbolism for driving out paganism with christianity.</li>
+        <li><b>Leprechauns are Protected</b> - In Carlingford, Leprechauns are offically recognized as a protected species.</li>
+        <li><b>The Harp Symbol</b> - The national symbol of Ireland isn't the shamrock, its the harp. Even Guinness uses it just flipped upside down to avoid copyright.</li>
+        <li><b>First Country to Ban Smoking in Pubs</b> - In 2004, Ireland became the first country in the world to ban smoking in all indoor workplaces including pubs.</li>
+      </ul>
+      <img src="images/Chad_destroys_snakes.png" height="500" alt="St. Patrick driving out the snakes">
   <hr style="width:100%;border:none;border-top:1px solid #e0e4ea;margin:2rem 0 1.5rem 0;">
   <h3>Irish Food Menu</h3>
   <div class="food-menu" id="food">
     <div class="food-item">
     <img src="images/stew_irish.png" alt="Irish Stew" height="200">
     <h4>Irish Stew</h4>
-    <p>A hearty stew made with lamb, potatoes, carrots, and onions. A true Irish classic!</p>
+    <p>The national comfort dish. Traditionally made with mutton or lamb along with onion, potato, and carrots.</p>
   </div>
   <div class="food-item">
     <img src="images/irish-brown-soda-bread-image.png" alt="Soda Bread" height="200">
     <h4>Soda Bread</h4>
-    <p>Traditional Irish bread made with baking soda instead of yeast. Perfect with butter!</p>
+    <p>Traditional Irish bread baked without yeast, instead using baking soda. Every Irish family has their own recipes, often including raisins or seeds. Best served with warm butter.</p>
   </div>
   <div class="food-item">
     <img src="images/boxty.png" alt="Boxty" height="200">
     <h4>Boxty</h4>
-    <p>Potato pancake, crispy on the outside and soft inside. A delicious Irish treat!</p>
+    <p>Classic potato dish from the North and West. Crispy on the outside, soft inside. Made from grated raw potato, mashed potato, flour, and buttermilk.</p>
   </div>
   <div class="food-item">
     <img src="images/seafood-chowder-bread-crackers.png" alt="Seafood Chowder" height="200">
     <h4>Seafood Chowder</h4>
-    <p>Creamy soup filled with fresh seafood and vegetables, served with brown bread.</p>
+    <p>Creamy soup filled with fresh seafood usually Salmon, cod, and shellfish. Served with brown bread to soak it up.</p>
   </div>
   <div class="food-item">
     <img src="images/cuddle_irish.png" alt="Cuddle" height="200">
     <h4>Cuddle</h4>
-    <p>Description</p>
+    <p>A Dublin speciality. What Irish families throw together from leftovers like sausages, bacon, onion, and sliced potatoes.</p>
   </div>
   <div class="food-item">
     <img src="images/basically_british_breakfast.png" alt="Full Irish Breakfast" height="200">
     <h4>Full Irish Breakfast</h4>
-    <p>Description</p>
+    <p>The monster of breakfasts. Includes sausages, bacon, eggs, black pudding(blood sausages), white pudding, tomatoes, beans, and toast. Designed to fuel farmers through long workdays.</p>
   </div>
   <div class="food-item">
     <img src="images/whiskey.png" alt="Jameson" height="200">
-    <h4>Jameson Whiskey</h4>
-    <p>Description</p>
+    <h4>Jameson</h4>
+    <p>Irish Whiskey. Lighter and less smokey than scotch.</p>
   </div>
     <div class="food-item">
     <img src="images/beer.png" alt="Guiness Beer" height="200">
-    <h4>Guiness Beer</h4>
-    <p>Description</p>
+    <h4>Guinness Beer</h4>
+    <p>The most iconic Irish beverage, brewed in Dublin since 1759. Famous for its creamy head and dark rich flavour. Tourists flock to Guinness storehouse to try it straight from the source.</p>
   </div>
   </div>
     </div>
@@ -83,13 +87,45 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <h3>Weather</h3>
-      <p>Mostly cloudy, 15°C</p>
-      <h3>Fun Fact</h3>
-      <p>The harp is the national symbol of Ireland.</p>
+      <p id="weather">Mostly cloudy, 15°C</p>
+      <h3>Who are we?</h3>
+      <!--Lets make it more professinal-->
+      <p>Here at Travel Ireland we are just a couple of guys who love Ireland and want to share it with the world!</p>
+      <h3>Join our newsletter</h3>
+      <form>
+        <label for="email">Subscribe to our newsletter:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+        <input type="phone number" id="phone number" name="phone number" placeholder="+47"><br>
+        <input type="submit" value="Join the Adventure!">
+      </form>
+      <h3>Terms and Conditions</h3>
+      <form>
+          <label for="terms"> I agree to the terms and conditions</label>
+          <input type="checkbox" id="terms" name="terms"> <br>
+      </form>
+      <a href="#">Read our privacy policy</a>
     </div>
     <div class="footer">
       &copy; 2025 Ireland Travel Guide
     </div>
   </div>
 </body>
+
+<script>
+
+  const weatherConditions = [
+    "Sunny, 20°C",
+    "Partly Cloudy, 18°C",
+    "Cloudy, 15°C",
+    "Rainy, 12°C",
+    "Windy, 14°C",
+    "Stormy, 10°C"
+  ];
+  function updateWeather() {
+    const weatherElement = document.getElementById('weather');
+    const randomCondition = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
+    weatherElement.textContent = randomCondition;
+  }
+  setInterval(updateWeather, 6000); 
+</script>
 </html>

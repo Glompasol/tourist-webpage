@@ -1,70 +1,52 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chef Advice</title>
-    <style>
-    header, footer {
-    background: #00005C;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef Advice</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/Flag_of_Ireland.png">
-        <hr>
-        <h1>Hey im Robert from Germany</h1>
-        <p>Im a professinal master chef that has worked at countless resturants.</p>
-        <p>And today i want to share my ultimate recepie with all of you!</p>
-    </header>
-    <center>
-    <h2>This is how you make an omelette</h2>
-    <p>We understand that as a resturant chain with more than 100 stores across America! We have a large responsibility to provide our users with the best online experience that is why we would like to than our sponsor Nestle! Nestle provides water to millions of people every single day and is a company known for its acts of kindness! Visit your local store and buy a water bottle with the nestle mark and while your at it visit our resturant!</p>
-    <p>This website was funded by skilled programmers please keep in mind the effort we put into this.</p>
-    <button onclick="fun_game()">Fill in this fun and interactive survey to see our recepies!</button>
-    <ol>
-        <button onclick="alert('Thanks for your feedback! We love to listen to our users to create a better enviroment for our users!')">What would you rate this recepie 1 out of 10?</button>
-    </ol>
-    </center>
+  <header>
+    <img src="images/Flag_of_Ireland.png" alt="Irish Flag" width="60">
+    <h1>Chef Robert's Advice</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#recipe">Recipe</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Chef Robert</h2>
+      <p>Robert is a professional chef with experience in top restaurants across Europe and America. He is passionate about sharing simple, delicious recipes with everyone.</p>
+    </section>
+    <section id="recipe">
+      <h2>How to Make an Omelette</h2>
+      <ol>
+        <li>Crack 2-3 eggs into a bowl.</li>
+        <li>Whisk the eggs with a pinch of salt and pepper.</li>
+        <li>Heat a non-stick pan over medium heat and add a little butter.</li>
+        <li>Pour in the eggs and cook gently, stirring occasionally.</li>
+        <li>When almost set, add cheese or herbs if desired, fold, and serve.</li>
+      </ol>
+      <img src="images/omelette.jpg" alt="Freshly made omelette" width="300">
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Chef Robert. All rights reserved.</p>
+  </footer>
 </body>
-<script>
-    function fun_game() 
-    {
-        let answer1 = prompt("What is your full name?")
-        let answer2 = prompt("What is your email adress?")
-        let answer4 = prompt("What is your phone number?")
-        let answer3 = prompt("Would you like to recive emails and SMS's of our new fun offers?")
-        let answer5 = prompt("Thank you for filling out our survey!")
-        Cookies()
-    }
-    function Cookies() 
-    {
-        let consent = prompt("We care about your privacy. Accept cookies for a overall better user expirience!")
-    }
-    function Recepie()
-    {
-        let newsletter = prompt("Would you like to recive fun Emails about our new offers and updates to keep up to date?")
-        alert("Before we show you our recepie we would like to have a word from our sponsor.")
-        alert("Are you thirsty? Grab a bottle! Oh no but most water bottles support exploitation! Buy from Nestle! Buy for freedom!")
-        alert("Whats up guys its your boy BOB! And today we are gonna be making the famous...")
-        alert("Drumroll please...")
-        alert("OM...")
-        alert("ME...")
-        alert("LETTE!!")
-        alert("So first you want to get your naturally sourced eggs...")
-        alert("Then make sure to grab a water bottle from our sponsor NESTLE!")
-        alert("Nestle is a organisation that makes sure people like you and i dont remain thirsty!")
-        alert("Not to mention they also help fight poverty!")
-        alert("Buy from Nestle")
-        alert("Alright with that out of the way lets get into the recepie!")
-        alert("Oh and make sure to buy me a coffe!")
-        alert("First crack the eggs...")
-        alert("Mix... Mix... Mix...")
-        alert("Then pour into the pan while drinking your ")
-    }
-</script>
 </html>
