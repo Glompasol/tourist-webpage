@@ -21,6 +21,14 @@
       <p>
           Visit Ireland now and discover all the beauty it has to offer! From stunning landscapes like the Emerald Isle to a rich history and culture deeply rooted in the middle ages. 
       </p>
+      <h3>How to use website</h3>
+      <p>
+        On your right side there is a sidebar. Use this to navigate the website and also get quick information 
+        about the weather, who we are, and also join our newsletter!
+      </p>
+      <p>
+        Scroll down to see our delicious food menu, and some fun facts about Ireland!
+      </p>
       <h3>Top Attractions</h3>
       <ul>
         <li>Dublin Castle</li>
@@ -37,7 +45,11 @@
         <li><b>First Country to Ban Smoking in Pubs</b> - In 2004, Ireland became the first country in the world to ban smoking in all indoor workplaces including pubs.</li>
         <li><b>Guinness World Records Orgin</b> - The book was created in the 1950s by the managing director of Guinness Brewery to settle bar arguments. So Guinness isnt just a beer, but a trivia too.</li>
       </ul>
-      <img src="images/Chad_destroys_snakes.png" height="500" alt="St. Patrick driving out the snakes">
+      <div class="image-row">
+        <img src="images/Chad_destroys_snakes.png" alt="Beautiful landscape of Ireland" style="width:100%;max-width:300px;border-radius:12px;margin-bottom:1rem;">
+        <img src="images/patrick-snakes.png" alt="Beautiful landscape of Ireland" style="width:100%;max-width:300px;border-radius:12px;margin-bottom:1rem;">
+        <img src="images/Guinness Beers.png" alt="Beautiful CITY of Ireland" style="width:100%;max-width:500px;border-radius:12px;margin-bottom:1rem;">
+      </div>
   <hr style="width:100%;border:none;border-top:1px solid #e0e4ea;margin:2rem 0 1.5rem 0;">
   <h3>Irish Food Menu</h3>
   <div class="food-menu" id="food">
@@ -82,7 +94,31 @@
     <p>The most iconic Irish beverage, brewed in Dublin since 1759. Famous for its creamy head and dark rich flavour. Tourists flock to Guinness storehouse to try it straight from the source.</p>
   </div>
   </div>
-    </div>
+  <section id="history">
+  <h3>The History of Ireland</h3>
+  <p>
+    Ireland’s history stretches back thousands of years, from ancient Celtic tribes and legendary High Kings to Viking invasions, Norman conquests, and centuries of British rule. The island’s story is one of resilience, culture, and transformation.
+  </p>
+  <p>
+    In the Middle Ages, Ireland was a land of monasteries and scholars, earning the nickname “the land of saints and scholars.” Later, the Great Famine of the 1840s led to mass emigration and shaped the Irish diaspora worldwide.
+  </p>
+  <p>
+    The 20th century saw Ireland fight for independence, resulting in the creation of the Republic of Ireland in 1949. Today, Ireland is known for its rich heritage, vibrant cities, and welcoming spirit.
+  </p>
+        <div class="image-row">
+        <img src="images/ancient_Irish_castle.png" alt="Castle" style="width:300px;border-radius:12px;margin-bottom:1rem;">
+        <img src="images/celtic.png" alt="VIKINGS!" style="width:300px;border-radius:12px;margin-bottom:1rem;">
+        <img src="images/Brave_Irish_Warriors_In_The_Hands_Of_Foul_BEASTS.png" alt="British" style="width:300px;border-radius:12px;margin-bottom:1rem;">
+      </div>
+  <ul>
+    <li><b>432 AD:</b> St. Patrick arrives in Ireland.</li>
+    <li><b>795 AD:</b> First Viking raids.</li>
+    <li><b>1845-1849:</b> The Great Famine.</li>
+    <li><b>1916:</b> Easter Rising for independence.</li>
+    <li><b>1949:</b> Republic of Ireland is declared.</li>
+  </ul> 
+</section>
+</div>
     <div class="sidebar">
       <img src="images/Coat_of_arms_of_Ireland.png" alt="Irish Harp" style="width:60px;display:block;margin:0 auto 1rem auto;">
       <h3>Quick Links</h3>
@@ -121,7 +157,7 @@
       <p>And thats why here at Travel Ireland we not only care about you, but we care about EVERYTHING!</p>
       <p>And that does include:</p>
       <img src="images/Earth.png" alt="Earth" style="width:300px;display:block;margin:1rem auto 0 auto;">
-    </div>
+    </div> 
     <div class="footer">
       &copy; 2025 Ireland Travel Guide
     </div>
@@ -143,6 +179,20 @@
     const randomCondition = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
     weatherElement.textContent = randomCondition;
   }
-  setInterval(updateWeather, 6000); 
+  setInterval(updateWeather, 6000);
+  //Shhhh dont tell the users its just a scam... or is it?
+  //Just kidding, its just random weather conditions
+  //They will never know right?
+  //But hey, at least its better than nothing!
+  //But seriously, dont use this for anything important
+  //Its just for fun
+  //But what if this site gets super popular?
+  //Then I guess I will have to implement a real weather API
+  //But what if i dont?
+  //And they sue me for false advertising?
+  //Nah, they will never find out
+  //Or will they?
+  //Muahahaha
+  updateWeather();
 </script>
 </html>
