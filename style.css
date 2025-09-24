@@ -158,3 +158,17 @@ padding-left: 1.2em;
   letter-spacing: 1px;
 }
 
+.image-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.image row img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
