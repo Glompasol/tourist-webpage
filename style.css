@@ -172,3 +172,19 @@ padding-left: 1.2em;
   border-radius: 12px;
   object-fit: cover;
 }
+
+.wiki-float-img {
+  float: right;
+  width: 150px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(34,58,94,0.08);
+}
+
+.big-wiki-float-img {
+  float: right;
+  width: 500px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(34,58,94,0.08);
+}
