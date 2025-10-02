@@ -188,3 +188,9 @@ padding-left: 1.2em;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(34,58,94,0.08);
 }
+
+.history-list {
+  column-width: 300px;
+  column-rule: 1px solid #ccc;
+  list-style-position: inside;
+}
