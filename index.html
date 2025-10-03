@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <script src="script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Ireland</title>
@@ -103,7 +104,7 @@
     <li><b>Gallaghers Boxy House</b> (Dublin)</li>
     <li><b>O'Neil's Pub & Kitchen</b> (Dublin)</li>
   </ul>
-  <section id="history">
+<section id="history">
   <h3>The History of Ireland</h3>
   <p>
     Ireland's story is one of resilience and endurance, and even in tough times the Irish have always found a way to celebrate life whether its through music, dance, or a good pint of Guinness.
@@ -121,7 +122,11 @@
   </p>
   <p>
     <img src="images/the_troubles.png" alt="The Troubles" class="big-wiki-float-img">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sint a nemo nulla provident optio quibusdam beatae unde, assumenda et architecto ipsa incidunt quas. Perferendis reiciendis labore recusandae quas molestiae.
+    In the 1960's tensions between the Protestant majority and the Catholic minority would rise after a campaign by the Northern Ireland Civil Rights Association to end discrimination against the Catholic minority by the Protestants. 
+    The government would attempt to suppress these protests with the police The Royal Ulster Constabulary (RUC), that were overwhelmingly Protestant and known for police brutality particularly against Catholics. Increasing tensions led to the deployment of British troops in Northern Ireland in what would become the British army's longest operation.
+    The British were initially welcomed by some catholics being seen as a peacekeeping force but that trust would quickly dissolve after the Bloody Sunday Massacre in 1972. 
+    The main participants in The Troubles were the Provisional Irish Republican Army (IRA) and the Irish National Liberation Army (INLA).
+    The Provisional Irish Republican Army (Provisional IRA) was the most active paramilitary group throughout The Troubles. The Provisional IRA sought to end British Rule in Northern Ireland and facilitate Irish reunification and proclaimed themselves as the sole legitimate succesor to the original IRA from the Irish War Of Independence.
   </p>
       <div class="image-row">
         <img src="images/ancient_Irish_castle.png" alt="Castle" style="width:350px;border-radius:12px;margin-bottom:1rem;">
@@ -141,6 +146,14 @@
     <li><b>1960-1998:</b> The Troubles.</li>
   </ul> 
 </section>
+<section class="bird-menu" id="nature">
+  <div class="bird-species">
+    <img src="images/Puffin.png" alt="Puffin Bird">
+    <h3>Puffin Bird</h3>
+    <button onclick="description('cute bird', 1)">Read More</button>
+    <p id="bird1"></p>
+  </div>
+</section>
 </div>
     <div class="sidebar">
       <img src="images/Coat_of_arms_of_Ireland.png" alt="Irish Harp" style="width:60px;display:block;margin:0 auto 1rem auto;">
@@ -149,7 +162,7 @@
         <li><a href="#fun-facts">Fun Facts</a></li>
         <li><a href="#food">Food</a></li>
         <li><a href="#history">History</a></li>
-        <li><a href="#"></a>Nature</li>
+        <li><a href="#nature">Nature</a></li>
         <!--This stuff is useful, right?-->
         <!--Right?-->
         <!--Or could they just scroll down instead?-->
@@ -188,22 +201,4 @@
     </div>
   </div>
 </body>
-
-<script>
-  const weatherConditions = [
-    "Sunny, 20°C",
-    "Partly Cloudy, 18°C",
-    "Cloudy, 15°C",
-    "Rainy, 12°C",
-    "Windy, 14°C",
-    "Stormy, 10°C"
-  ];
-  function updateWeather() {
-    const weatherElement = document.getElementById('weather');
-    const randomCondition = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
-    weatherElement.textContent = randomCondition;
-  }
-  setInterval(updateWeather, 6000);
-  updateWeather();
-</script>
 </html>
