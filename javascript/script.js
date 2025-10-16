@@ -1,4 +1,3 @@
-
   const weatherConditions = [
     "Sunny, 20°C",
     "Partly Cloudy, 18°C",
@@ -26,3 +25,10 @@
       document.getElementById("3").textContent = desc
     }
   }
+
+  document.getElementById('show-video-btn').onclick = function() {
+    document.getElementById('video-modal').style.display = 'flex';
+  };
+  document.getElementById('video-modal-btn').onclick = function() {
+    document.getElementById('video-modal').style.display = 'none';
+  };

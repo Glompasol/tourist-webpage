@@ -14,7 +14,7 @@
       Ireland Travel Guide
     </div>
     <div class="main">
-      <h2>Welcome to Ireland!</h2>
+      <h2 id="top">Welcome to Ireland!</h2>
       <div class="image-row">
         <img src="images/homepage_landscape.png" alt="Beautiful landscape of Ireland" style="width:100%;max-width:350px;border-radius:12px;margin-bottom:1rem;">
         <img src="images/Landscape.png" alt="Beautiful landscape of Ireland" style="width:100%;max-width:350px;border-radius:12px;margin-bottom:1rem;">
@@ -31,6 +31,7 @@
       <p>
         Scroll down to see our delicious food menu, and some fun facts about Ireland!
       </p>
+      <hr>
       <h3>Top Attractions</h3>
       <ul>
         <li>Dublin Castle <span class="details">09:45-17:15 | 93 kr fee</span></li>
@@ -54,7 +55,7 @@
         <img src="images/patrick-snakes.png" alt="Beautiful landscape of Ireland" style="height: 350px;border-radius:12px;margin-bottom:1rem;">
         <img src="images/Guinness Beers.png" alt="Beautiful CITY of Ireland" style="height: 350px;border-radius:12px;margin-bottom:1rem;">
       </div>
-  <hr style="width:100%;border:none;border-top:1px solid #e0e4ea;margin:2rem 0 1.5rem 0;">
+  <hr>
   <h3>Irish Food Menu</h3>
   <div class="food-menu" id="food">
     <div class="food-item">
@@ -128,11 +129,23 @@
     The main participants in the Troubles were the Provisional Irish Republican Army (IRA) and the Irish National Liberation Army (INLA).
     The Provisional Irish Republican Army (Provisional IRA) was the most active paramilitary group throughout the Troubles. The Provisional IRA sought to end British Rule in Northern Ireland and facilitate Irish reunification and proclaimed themselves as the sole legitimate successor to the original IRA from the Irish War Of Independence.
   </p>
-      <div class="image-row">
-        <img src="images/ancient_Irish_castle.png" alt="Castle" style="width:350px;border-radius:12px;margin-bottom:1rem;">
-        <img src="images/celtic.png" alt="VIKINGS!" style="width:350px;border-radius:12px;margin-bottom:1rem;">
-        <img src="images/Brave_Irish_Warriors_In_The_Hands_Of_Foul_BEASTS.png" alt="British" style="width:350px;border-radius:12px;margin-bottom:1rem;">
-      </div>
+  <button id="show-video-btn">Watch Video</button>
+
+  <div id="video-modal" class="video">
+    <div class="inner-video">
+      <button id="close-video-btn" class="video-button">Close</button>
+      <video width="600" controls>
+        <source src="videos/Tiltak for å kutte klima utslipp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="image-row">
+    <img src="images/ancient_Irish_castle.png" alt="Castle" style="width:350px;border-radius:12px;margin-bottom:1rem;">
+    <img src="images/celtic.png" alt="VIKINGS!" style="width:350px;border-radius:12px;margin-bottom:1rem;">
+    <img src="images/Brave_Irish_Warriors_In_The_Hands_Of_Foul_BEASTS.png" alt="British" style="width:350px;border-radius:12px;margin-bottom:1rem;">
+  </div>
   <ul class="history-list">
     <li><b>432 AD:</b> St. Patrick arrives in Ireland.</li>
     <li><b>795 AD:</b> First Viking raids.</li>
@@ -146,7 +159,9 @@
     <li><b>1960-1998:</b> The Troubles.</li>
   </ul> 
 </section>
-<section class="nature-menu" id="nature">
+<hr>
+<h3 id="nature">Irish Nature</h3>
+<section class="nature-menu">
   <div class="nature-species">
     <img src="images/Puffin.png" alt="Atlantic Puffin">
     <h3>Puffin Bird</h3>
@@ -166,6 +181,11 @@
     <p id="3"></p>
   </div>
 </section>
+<hr>
+<h3 id="videos">Videos</h3>
+<section>
+
+</section>
 </div>
     <div class="sidebar">
       <img src="images/Coat_of_arms_of_Ireland.png" alt="Irish Harp" style="width:60px;display:block;margin:0 auto 1rem auto;">
@@ -175,6 +195,7 @@
         <li><a href="#food">Food</a></li>
         <li><a href="#history">History</a></li>
         <li><a href="#nature">Nature</a></li>
+        <li><a href="#videos">Videos</a></li>
         <!--This stuff is useful, right?-->
         <!--Right?-->
         <!--Or could they just scroll down instead?-->
