@@ -22,7 +22,17 @@ li {
   margin-bottom: 1.2em;
   max-width: 700px;
   letter-spacing: 0.01em;  
+  list-style-type: disc;
+  list-style-type: none;
+  padding: 5px;
 }
+
+.details {
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 10px;
+}
+
 
 .grid-container {
     display: grid;
@@ -226,7 +236,7 @@ padding-left: 1.2em;
   list-style-position: inside;
 }
 
-.bird-menu {
+.nature-menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
@@ -234,7 +244,7 @@ padding-left: 1.2em;
   width: 100%;
 }
 
-.bird-species {
+.nature-species {
   background: #f7fafc;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(34,58,94,0.08);
@@ -247,15 +257,15 @@ padding-left: 1.2em;
   border: 1px solid #e0e4ea;
 }
 
-.bird-species:hover {
+.nature-species:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 24px rgba(34,58,94,0.16);
   border-color: #4ecca3;
   background-color: #e0e4ea;
 }
 
-.bird-species img {
-  width: 500px;
+.nature-species img {
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -263,7 +273,7 @@ padding-left: 1.2em;
   background: #e0e4ea;
 }
 
-.bird-species h4 {
+.nature-species h4 {
   margin: 0.5rem 0 0.3rem 0;
   color: #223a5e;
   font-size: 1.15rem;
@@ -271,7 +281,7 @@ padding-left: 1.2em;
   letter-spacing: 1px;
 }
 
-.bird-species button {
+.nature-species button {
   margin: 0.5rem 0 0.3rem 0;
   color: #223a5e;
   font-size: 1.15rem;
@@ -282,9 +292,13 @@ padding-left: 1.2em;
   border-radius: 10px;
 }
 
-.bird-species button:hover {
+.nature-species button:hover {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 8px 24px rgba(34,58,94,0.16);
   border-color: #4ecca3;
   background-color: #e0e4ea;
+}
+
+a {
+  text-decoration: none;
 }

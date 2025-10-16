@@ -15,8 +15,14 @@
   setInterval(updateWeather, 6000);
   updateWeather();
 
-  function description(desc, bird) {
-    if (bird == 1) {
-      document.getElementById("bird1").textContent = desc
+  function description(desc, p) {
+    if (p == 1) {
+      document.getElementById("1").textContent = desc
+    }
+    if (p == 2) {
+      document.getElementById("2").textContent = desc
+    }
+    if (p == 3) {
+      document.getElementById("3").textContent = desc
     }
   }
